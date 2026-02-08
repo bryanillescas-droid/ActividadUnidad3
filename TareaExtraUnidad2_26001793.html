@@ -1,0 +1,124 @@
+<html>
+  <head>
+    <title>Tarea Extra Actividad 2</title>
+  </head>
+  <body>
+    <script>
+      var jugamos = true;
+
+      do {
+        var numeroComputadora = Math.trunc(Math.random() * 9);
+        // var numeroComputadora = 5;
+
+        var numeroJugador = parseInt(
+          prompt("Por favor, ingresa un numero entre 1 y 9!"),
+          10,
+        );
+
+        while (isNaN(numeroJugador) || numeroJugador < 1 || numeroJugador > 9) {
+          numeroJugador = parseInt(
+            prompt("Por favor, ingresa un numero entre 1 y 9!"),
+            10,
+          );
+        }
+
+        var adivinanza = parseInt(
+          prompt(`Adivina si el numero que ingresaste es mayor, igual o menor que el que seleciono la computadora. Selecciona uno de la siguientes opciones ingresando el numero que le corresponde:
+        1. Mayor.
+        2. Menor.
+        3. Igual.`),
+          10,
+        );
+
+        while (adivinanza >= 1 && adivinanza <= 3) {
+          if (adivinanza == 1) {
+            if (numeroJugador > numeroComputadora) {
+              jugamos = parseInt(
+                prompt(
+                  "La computadora genero el numero: " +
+                    numeroComputadora +
+                    ". El usuario ingreso el numero: " +
+                    numeroJugador +
+                    " tu seleccion es Mayor. Has Adivinado! \nQuieres seguir jugando?\nIngresa 0 para NO y 1 para SI.",
+                ),
+                10,
+              );
+              adivinanza = 0;
+            } else {
+              jugamos = parseInt(
+                prompt(
+                  "La computadora genero el numero: " +
+                    numeroComputadora +
+                    ". El usuario ingreso el numero: " +
+                    numeroJugador +
+                    " tu seleccion es Mayor. NO HAS ADIVINADO! \nQuieres seguir jugando?\nIngresa 0 para NO y 1 para SI.",
+                ),
+                10,
+              );
+              adivinanza = 0;
+            }
+          } else if (adivinanza == 2) {
+            if (numeroJugador < numeroComputadora) {
+              jugamos = parseInt(
+                prompt(
+                  "La computadora genero el numero: " +
+                    numeroComputadora +
+                    ". El usuario ingreso el numero: " +
+                    numeroJugador +
+                    " tu seleccion es Menor. Has Adivinado! \nQuieres seguir jugando?\nIngresa 0 para NO y 1 para SI.",
+                ),
+                10,
+              );
+              adivinanza = 0;
+            } else {
+              jugamos = parseInt(
+                prompt(
+                  "La computadora genero el numero: " +
+                    numeroComputadora +
+                    ". El usuario ingreso el numero: " +
+                    numeroJugador +
+                    " tu seleccion es Menor. NO HAS ADIVINADO! \nQuieres seguir jugando?\nIngresa 0 para NO y 1 para SI.",
+                ),
+                10,
+              );
+              adivinanza = 0;
+            }
+          } else if (adivinanza == 3) {
+            if (numeroJugador == numeroComputadora) {
+              jugamos = parseInt(
+                prompt(
+                  "La computadora genero el numero: " +
+                    numeroComputadora +
+                    ". El usuario ingreso el numero: " +
+                    numeroJugador +
+                    " tu seleccion es Igual. Has Adivinado! \nQuieres seguir jugando?\nIngresa 0 para NO y 1 para SI.",
+                ),
+                10,
+              );
+              adivinanza = 0;
+            } else {
+              jugamos = parseInt(
+                prompt(
+                  "La computadora genero el numero: " +
+                    numeroComputadora +
+                    ". El usuario ingreso el numero: " +
+                    numeroJugador +
+                    " tu seleccion es Igual. NO HAS ADIVINADO! \nQuieres seguir jugando?\nIngresa 0 para NO y 1 para SI.",
+                ),
+                10,
+              );
+              adivinanza = 0;
+            }
+          }
+        }
+      } while (jugamos);
+      console.log(
+        "this line gets axecuted once do..while.. has been executed.",
+      );
+      alert(
+        "Nombre Bryan Estuardo Illescas Leon.\nCarnet: 26001793.\n\nEsta ventana se cerrara en 20 segundos!",
+      );
+      window.close();
+    </script>
+  </body>
+</html>

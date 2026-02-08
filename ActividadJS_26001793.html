@@ -1,0 +1,100 @@
+<html>
+  <head>
+    <title>ActividadJS_26001793</title>
+  </head>
+  <body>
+    <script>
+      let MesDeNacimiento = parseInt(
+        prompt("Ingresa tu mes de nacimiento"),
+        10,
+      );
+      let diaDeNacimiento = parseInt(
+        prompt("Ingresa tu dia de Nacimiento"),
+        10,
+      );
+
+      if (
+        MesDeNacimiento >= 1 &&
+        MesDeNacimiento <= 12 &&
+        diaDeNacimiento >= 1 &&
+        diaDeNacimiento <= 30
+      ) {
+        if (MesDeNacimiento == 1) {
+          if (diaDeNacimiento >= 21) {
+            alert("Tu signo es Acuario");
+          } else {
+            alert("Tu signo es Capricornio");
+          }
+        } else if (MesDeNacimiento == 2) {
+          if (diaDeNacimiento >= 20) {
+            alert("Tu singno es Piscis");
+          } else {
+            alert("Tu singno es Acuario");
+          }
+        } else if (MesDeNacimiento == 3) {
+          if (diaDeNacimiento >= 21) {
+            alert("Tu singno es Aries");
+          } else {
+            alert("Tu singno es Piscis");
+          }
+        } else if (MesDeNacimiento == 4) {
+          if (diaDeNacimiento >= 21) {
+            alert("Tu singno es Tauro");
+          } else {
+            alert("Tu singno es Aries");
+          }
+        } else if (MesDeNacimiento == 5) {
+          if (diaDeNacimiento >= 21) {
+            alert("Tu singno es Geminis");
+          } else {
+            alert("Tu singno es Tauro");
+          }
+        } else if (MesDeNacimiento == 6) {
+          if (diaDeNacimiento >= 21) {
+            alert("Tu singno es Cancer");
+          } else {
+            alert("Tu singno es Geminis");
+          }
+        } else if (MesDeNacimiento == 7) {
+          if (diaDeNacimiento >= 21) {
+            alert("Tu singno es Leo");
+          } else {
+            alert("Tu singno es Cancer");
+          }
+        } else if (MesDeNacimiento == 8) {
+          if (diaDeNacimiento >= 21) {
+            alert("Tu singno es Virgo");
+          } else {
+            alert("Tu singno es Leo");
+          }
+        } else if (MesDeNacimiento == 9) {
+          if (diaDeNacimiento >= 21) {
+            alert("Tu singno es Libra");
+          } else {
+            alert("Tu singno es Virgo");
+          }
+        } else if (MesDeNacimiento == 10) {
+          if (diaDeNacimiento >= 21) {
+            alert("Tu singno es Escorpio");
+          } else {
+            alert("Tu singno es Libra");
+          }
+        } else if (MesDeNacimiento == 11) {
+          if (diaDeNacimiento >= 21) {
+            alert("Tu singno es Sagitario");
+          } else {
+            alert("Tu singno es Escorpio");
+          }
+        } else if (MesDeNacimiento == 12) {
+          if (diaDeNacimiento >= 21) {
+            alert("Tu singno es Capricornio");
+          } else {
+            alert("Tu singno es Sagitario");
+          }
+        }
+      } else {
+        alert("Data Invalida. Refresh the page (F5) to retry!");
+      }
+    </script>
+  </body>
+</html>
